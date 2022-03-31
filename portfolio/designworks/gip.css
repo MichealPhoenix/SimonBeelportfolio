@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "Belwe";
+	src: url("../belwemediumbt-webfont.woff") format("woff");
+	src: url("../belwemediumbt-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BelweBold";
+	src: url("../belwe_bold_bt-webfont.woff") format("woff");
+	src: url("../belwe_bold_bt-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BelweLight";
+	src: url("../belwe_light_regular-webfont.woff") format("woff");
+	src: url("../belwe_light_regular-webfont.woff2") format("woff2");
+}
+
+body {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #E86100;
+}
+
+a {
+	text-decoration: none;
+	cursor: url('../img/asset 23.png'), pointer;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+	cursor: url('../img/asset 13.png'), auto;
+}
+
+div {
+	border: 1pt hidden red;
+}
+
+.row {
+	margin-right: 0;
+}
+
+#jumbo {
+
+}
+
+#hood {
+	width: 50%;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hoodcolor {
+	z-index: 2;
+	pointer-events: none;
+	opacity: 0;
+	width: 50%;
+	transition: 0.5s;
+	margin-left: -75%;
+	margin-right: auto;
+}
+
+#hood:hover + #hoodcolor {
+	opacity: 1;
+}
+
+#backview {
+	height: 80vh;
+	max-width: 95vw;
+	margin-right: 5vw;
+	float: right;
+	z-index: 1;
+}
+
+#backviewcolor {
+	z-index: 2;
+	pointer-events: none;
+	opacity: 0;
+	height: 80vh;
+	max-width: 95vw;
+	margin-right: 5vw;
+	float: right;
+	margin-top: -80vh;
+	transition: 0.5s;
+}
+
+#backview:hover + #backviewcolor {
+	opacity: 1;
+}
+
+.col-sm-6 {
+	margin-top: 20vh;
+	padding-right: 0;
+	display: inline-block;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+	font-family: BelweLight;
+	font-size: 5em;
+	text-align: center;
+	color: rgba(200,85,0,1);
+	transition: 0.3s;
+}
+
+h1:hover {
+	color: white;
+	transform: skew(-10deg);
+}
+
+p {
+	color: white;
+	font-family: BelweLight;
+	font-size: 1.7em;
+	margin-left: 10%;
+}
+
+#car {
+	display: flex;
+	height: 70vh;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	padding: 0 25vw;
+}
+
+.carousel-inner {
+	max-height: 75vh;
+}
+
+#logo {
+	position: absolute;
+	font-size: 1.8em;
+	margin-left: 25px;
+	margin-top: 25px;
+	font-family: BelweLight;
+	color: orange;
+	position: fixed;
+	color: white;
+	transition: 0.2s ease-out;
+	z-index: 2;
+}
+
+#logo:hover {
+	transform: skew(10deg);
+}

@@ -1,0 +1,178 @@
+body {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #E86100;
+}
+
+a {
+	text-decoration: none;
+	cursor: url('img/asset 23.png'), pointer;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+	cursor: url('img/asset 13.png'), auto;
+}
+
+@font-face {
+	font-family: "Belwe";
+	src: url("belwemediumbt-webfont.woff") format("woff");
+	src: url("belwemediumbt-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BelweBold";
+	src: url("belwe_bold_bt-webfont.woff") format("woff");
+	src: url("belwe_bold_bt-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "BelweLight";
+	src: url("belwe_light_regular-webfont.woff") format("woff");
+	src: url("belwe_light_regular-webfont.woff2") format("woff2");
+}
+
+.parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+h1 {
+	color: white;
+	font-family: BelweLight;
+	font-size: 4em;
+	width: 100vw;
+	margin: 0;
+	transition: 0.2s;
+	padding-left: 10vw;
+}
+
+h1:hover {
+	padding-left: 20vw;
+}
+
+#fototp {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/tpmechelenbg.png);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#tpmechelen:hover + #fototp {
+	background-size: 100vw;
+}
+
+#fotogip {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/gipbg.png);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#gip:hover + #fotogip {
+	background-size: 100vw;
+}
+
+#fotomix {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/mixbg.png);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#mix:hover + #fotomix {
+	background-size: 100vw;
+}
+
+#fotopaloma {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/palbg.png);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#paloma:hover + #fotopaloma {
+	background-size: 100vw;
+}
+
+#fotohelsinki {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/helsinkibg.png);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#helsinki:hover + #fotohelsinki {
+	background-size: 100vw;
+}
+
+#fotoirogami {
+	z-index: -1;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(img/irogamibg.gif);
+	background-position: center;
+	background-size: 0 0;
+	top: 0;
+	left: 0;
+}
+
+#irogami:hover + #fotoirogami {
+	background-size: 100vw;
+}
+
+#logo {
+	position: absolute;
+	font-size: 1.8em;
+	margin-left: 25px;
+	margin-top: 25px;
+	font-family: BelweLight;
+	color: orange;
+	position: fixed;
+	color: white;
+	transition: 0.2s ease-out;
+	z-index: 2;
+}
+
+#logo:hover {
+	transform: skew(10deg);
+}

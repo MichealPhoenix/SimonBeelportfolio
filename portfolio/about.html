@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ynl1jsh.css">
+</head>
+
+<body>
+
+    <div id="ex1" class="container">
+        <div id="ex1-layer" class="box"><img src="img/me.png" alt=""></div>
+    </div>
+
+    <div id="cont_text">
+        <div class="text"><h2>Simon Beel</h2></div>
+        <div class="text"><h3>Graphic designer & more</h3></div>
+        <div class="text"><p>A 17 year old with a passion for art and design?</p></div>
+        <div class="text"><p>Location: Belgium</p></div>
+        <div class="text" id="jup"><p>simonbeel@hotmail.com</p></div>
+    </div>
+
+<script>
+    let constrain = 20;
+let mouseOverContainer = document.getElementById("ex1");
+let ex1Layer = document.getElementById("ex1-layer");
+
+function transforms(x, y, el) {
+  let box = el.getBoundingClientRect();
+  let calcX = -(y - box.y - (box.height / 2)) / constrain;
+  let calcY = (x - box.x - (box.width / 2)) / constrain;
+  
+  return "perspective(100px) "
+    + "   rotateX("+ calcX +"deg) "
+    + "   rotateY("+ calcY +"deg) ";
+};
+
+ function transformElement(el, xyEl) {
+  el.style.transform  = transforms.apply(null, xyEl);
+}
+
+mouseOverContainer.onmousemove = function(e) {
+  let xy = [e.clientX, e.clientY];
+  let position = xy.concat([ex1Layer]);
+
+  window.requestAnimationFrame(function(){
+    transformElement(ex1Layer, position);
+  });
+};
+</script>
+
+</body>
+
+</html>

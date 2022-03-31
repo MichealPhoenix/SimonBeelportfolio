@@ -1,0 +1,61 @@
+body {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #E86100;
+	color: #9C4100;
+}
+
+body {
+	cursor: url('/img/asset 23.png'), auto;
+}
+
+a {
+	cursor: url('/img/asset 23.png'), auto;
+}
+
+#cont_text {
+	pointer-events: none;
+	position: absolute;
+	top: 25vh;
+	z-index: 2;
+	height: 50vh;
+	width: 70vw;
+	margin: 0 15vw;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.text {
+
+}
+
+.container {
+	border: 2px hidden white;
+	display: flex;
+	margin: 15vh 25vw;
+	width: 50vw;
+	height: 70vh;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.box {
+	height: 300px;
+	width: 300px;
+	border: 2px hidden; white;
+	position: absolute;
+	transition: 1s;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.box img {
+	height: 100%;
+	width: 100%;
+}
